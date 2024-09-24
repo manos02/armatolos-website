@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ΚΥΠΡΟΣ - Articles</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../styles.css"> 
+     <!-- Font Awesome CDN for icons -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+    
+<body>
+
+    <img src="../../images/cover-image.jpg" alt="Cover Image" class="cover-image">
+
+    <div class="home-container">
+        <nav id="main-nav-menu" class="main-nav-menu"> 
+            <ul id="menu-armatolos" class="menu">
+                <li><a href="../../index.html">ΑΡΧΙΚΗ</a></li>
+                <li><a href="category/cyprus/cyprus.html">ΠΑΡΕΜΒΑΣΕΙΣ</a></li>
+                <li><a href="category/analiseis/analiseis.html">ΑΝΑΛΥΣΕΙΣ</a></li>
+                <li class="current-menu-item"><a href="../cyprus/cyprus.html">ΚΥΠΡΙΑΚΗ ΔΗΜΟΚΡΑΤΙΑ</a></li>
+                <li><a href="category/ethniki_froura/ethniki_froura.html">ΕΘΝΙΚΗ ΦΡΟΥΡΑ</a></li>
+                <li><a href="category/geopolitiki/geopolitiki.html">ΓΕΩΠΟΛΙΤΙΚΗ</a></li>
+                <li><a href="category/ekdoseis_armatolos/ekdoseis_armatolos.html">ΕΚΔΟΣΕΙΣ ΑΡΜΑΤΟΛΟΣ</a></li>
+                <li><a href="category/epikinonia/epikinonia.html">ΕΠΙΚΟΙΝΩΝΙΑ</a></li>
+            </ul>
+        </nav>
+        
+        <hr class="default"> <!-- horizontal rule (line) that separates content sections -->
+
+
+        <section class="articles-section" id="articles-section">
+            <!-- Breadcrumb navigation -->
+            <div class="breadcrumb">
+                <a href="../../index.html"><i class="fa-solid fa-house"></i> Home</a> / <span>ΚΥΠΡΙΑΚΗ ΔΗΜΟΚΡΑΤΙΑ</span>
+            </div>
+            <h1>ΚΥΠΡΟΣ</h1>
+            
+        </section>
+        
+        <!-- Pagination controls -->
+        <div class="pagination" id="pagination">
+            <a href="#" class="prev" onclick="loadPage(currentPage - 1)">Previous</a>
+            <a href="#" class="next" onclick="loadPage(currentPage + 1)">Next</a>
+        </div>
+
+        <script src="script.js"></script> 
+
+
+    </div>
+</body>
+</html>

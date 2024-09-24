@@ -1,17 +1,40 @@
-/* .main-nav-menu {
-    
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 } */
 
-ul {
+
+.cover-image {
+    width: 100%;
+    height: 200px;
+    display: block;
+}
+.menu {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
 }
-  
+
+
+
+Centering the article content
+.container {
+    width: 100%;
+    max-width: 800px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+}
+
+
+/* List items */
 li {
-float: left;
+    float: left;
 }
 
 li a {
@@ -22,25 +45,21 @@ li a {
     text-decoration: none;
 }
   
-  /* Change the link color to #111 (black) on hover */
 li a:hover {
     background-color: #111;
 }
 
-.cover-image {
-    width: 100%;
-    height: 200px;
-    display: block;
-}
 
+
+/* header */
 h1 {
     font-size: 2.22222em;
     font-weight: 900;
-    line-height: 1;
     color: rgb(101, 181, 196);
-    /* margin-top: 8px; */
 }
 
+
+/* line break */
 hr {
     display: block;
     margin-top: 2em;
@@ -52,17 +71,175 @@ hr {
   }
 
 
-.article--grid--infos {
-position: relative; }
-.article--grid--infos a {
-    font-weight: 900; }
+.current-menu-item {
+    font-weight: bold;
+}
 
-.article--grid--infos a.article--title {
-color: black;
-font-size: 1.11111em;
-line-height: 1.22222em;
-display: inline-block;
-margin: 0.9em 0 0.1em 0;
-width: 100%;
-text-transform: none;
--webkit-text-stroke: 0.1px; }
+/* Article title in articles */
+.article-title {
+    font-family: 'Arial', sans-serif; /* Change font as needed */
+    font-size: 1.8em; /* Size of the title */
+    font-weight: bold; /* Bold text */
+    color: #2c3e50; /* Dark blue color */
+    margin: 20px 0; /* Margin above and below the title */
+    text-align: center; /* Center the title */
+    padding-bottom: 10px; /* Space between title and underline */
+}
+
+
+/* For articles in categories */
+
+.articles-section {
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 20px; /* Optional: to add some space above */
+}
+
+.article {
+    display: flex;
+    margin-bottom: 40px;
+}
+
+.article--img {
+    flex-shrink: 0; /* Prevent the image from shrinking */
+}
+
+.article-image {
+    width: 400px; /* Set a specific width for the image */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 15px; /* Space between image and title */
+}
+
+.article--title {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #2c3e50;
+}
+
+.article--title:hover {
+    text-decoration: underline;
+}
+
+.article-info {
+    flex-grow: 1;
+}
+
+/* Centering the article content */
+.content-wrapper {
+    display: flex;
+    justify-content: center; /* Centers the article horizontally */
+    padding: 60px;
+}
+
+
+.centered-article {
+    width: 100%;
+    max-width: 800px; /* Limit the width of the article */
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+/* article paragraphs */
+article p {
+    line-height: 1.6;
+    margin-bottom: 15px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Styling for unordered lists inside the article */
+article ul {
+    padding-left: 20px;
+    font-size: 1.1em;
+    color: #333;
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+/* For responsive design */
+@media (max-width: 768px) {
+    .article {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .article-image {
+        width: 100%;
+        margin-bottom: 15px;
+    }
+
+    .article-info {
+        margin-left: 0;
+    }
+
+    .centered-article {
+        padding: 10px;
+    }
+}
+
+
+
+/* Breadcrumb styling */
+.breadcrumb {
+    font-size: 16px;
+}
+
+.breadcrumb a {
+    color: #666;
+    text-decoration: none;
+}
+
+.breadcrumb a:hover {
+    font-weight: bold;
+}
+
+.breadcrumb span {
+    color: #666;
+}
+
+
+/* Meta styling */
+
+.meta-info {
+    font-size: 14px;
+    color: #999;
+    margin-bottom: 10px;
+}
+
+.meta-info .author {
+    font-weight: bold;
+}
+
+.meta-info .date {
+    margin-left: 10px;
+}
+
+/* pegination */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 0;
+}
+
+.pagination a {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+    border: 1px solid #333; /* Match the border to your color */
+    border-radius: 5px;
+}
+
+.pagination a:hover {
+    background-color: #333; /* Change to your desired hover color */
+    color: white; /* Change text color on hover */
+}
+
+.prev, .next {
+    display: inline-block;
+}
+
+.prev i, .next i {
+    margin-right: 5px; /* Space between icon and text */
+}
